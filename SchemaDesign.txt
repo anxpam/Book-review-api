@@ -1,0 +1,32 @@
+📊 Database Schema
+User Schema
+javascript{
+  username: String ,
+  email: String ,
+  password: String ,
+  firstName: String ,
+  lastName: String ,
+  timestamps: true
+}
+Book Schema
+javascript{
+  title: String ,
+  author: String ,
+  genre: String ,
+  description: String ,
+  publishedYear: Number ,
+  pages: Number ,
+  language: String ,
+  addedBy: ObjectId ,
+  averageRating: Number ,
+  totalReviews: Number ,
+  timestamps: true
+}
+Review Schema
+javascript{
+  book: ObjectId ,
+  user: ObjectId ,
+  rating: Number ,
+  comment: String ,
+  timestamps: true
+}
